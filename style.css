@@ -65,9 +65,13 @@ body input{
     font-size: 12pt;
 }
 .task-maker{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
+    transition-duration: 5s;
+}
+.task-maker.click{
+    display: flex;
 }
 .task-maker input{
     border-radius: 5px;
@@ -87,13 +91,17 @@ body input{
     background-color: #29ab7e;
     color: #c4feef;
     cursor: pointer;
+    order: 1;
 }
-.task-maker input:first-child{
+.task-maker .task{
     width: calc(80% - 10px);
+    order: 0;
 
 }
-.task-maker input:last-child{
+.task-maker .note{
     width: 100%;
+    min-width: 100%;
+    order: 2;
 }
 .tasks-choices{
     display: flex;
@@ -125,12 +133,15 @@ body input{
     color: #ffffff;
 }
 .tasks{
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
 .tasks li{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
     background-color: #ffffff;
     padding: 10px;
@@ -171,4 +182,7 @@ body input{
 }
 .tasks li:has(input:checked) p{
     text-decoration: line-through;
+}
+.tasks li:has(input:checked){
+    order: 5;
 }

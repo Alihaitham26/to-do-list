@@ -11,46 +11,33 @@
     <div class="header" id="header">
         <div class="today-information">
             <h2>Today's tasks</h2>
-            <p id="date">Monday, 25 Aug</p>
+            <p id="date">sunday, 26 Nov</p>
         </div>
-        <button><span class="add-sign">+</span> <span>new task</span></button>
+        <button id="newTaskBtn"><span class="add-sign">+</span> <span>new task</span></button>
     </div>
     <div class="task-maker" id="taskMaker" >
-        <input type="text" placeholder="task" id="task">
-        <button id="add-task">add</button>
-        <input type="text" placeholder="note" id="note">
+        <input type="text" placeholder="task" id="taskInp" class="task">
+        <input type="text" placeholder="note" id="noteInp" class="note">
+        <button id="addTask">add</button>
     </div>
     <div class="tasks-choices" id="tasks-choices">
-        <div id="tasks-choice" class="all active">
+        <div id="all" class="all active">
             <span id="name">All</span>
             <span id="NoOfTasks" class="no-of-tasks">90</span>
         </div>
-        <div id="tasks-choice">
-            <span id="name">In poggress</span>
-            <span id="NoOfTasks" class="no-of-tasks">45</span>
+        <div id="inPorgress">
+            <span id="name">In progress</span>
+            <span id="NoOfTasksInProg" class="no-of-tasks">45</span>
         </div>
-        <div id="tasks-choice">
-            <span id="name">Finished</span>
-            <span id="NoOfTasks" class="no-of-tasks">45</span>
+        <div id="finished">
+            <spand id="name">Finished</spand>
+            <span id="NoOfTasksFinished" class="no-of-tasks">45</span>
         </div>
     </div>
     <ul class="tasks" id="tasks">
-        <li>
-            <p>example to do element</p>
-            <input type="checkbox">
-            <span id="note" class="note">simple note</span>
-        </li>
-        <li>
-            <p>example to do element</p>
-            <input type="checkbox">
-            <span id="note" class="note">simple note</span>
-        </li>
-        <li>
-            <p>example to do element</p>
-            <input type="checkbox">
-            <span id="note" class="note">simple note</span>
-        </li>
     </ul>
     </div>
+    <script src="utilites.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
