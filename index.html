@@ -7,46 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="App">
     <div class="header" id="header">
-        <h2>Today's task</h2>
-        <p id="date">Monday, 25 Aug</p>
-        <button>+ new task</button>
+        <div class="today-information">
+            <h2>Today's tasks</h2>
+            <p id="date">Monday, 25 Aug</p>
+        </div>
+        <button><span class="add-sign">+</span> <span>new task</span></button>
     </div>
-    <div class="task-maker" id="taskMaker">
+    <div class="task-maker" id="taskMaker" >
         <input type="text" placeholder="task" id="task">
-        <input type="text" placeholder="note" id="note">
         <button id="add-task">add</button>
+        <input type="text" placeholder="note" id="note">
     </div>
-    <ul class="tasks-choics" id="tasks-choices">
-        <div id="tasks-choice">
+    <div class="tasks-choices" id="tasks-choices">
+        <div id="tasks-choice" class="all active">
             <span id="name">All</span>
-            <span id="NoOfTasks">90</span>
+            <span id="NoOfTasks" class="no-of-tasks">90</span>
         </div>
         <div id="tasks-choice">
-            <span id="name">All</span>
-            <span id="NoOfTasks">90</span>
+            <span id="name">In poggress</span>
+            <span id="NoOfTasks" class="no-of-tasks">45</span>
         </div>
         <div id="tasks-choice">
-            <span id="name">All</span>
-            <span id="NoOfTasks">90</span>
+            <span id="name">Finished</span>
+            <span id="NoOfTasks" class="no-of-tasks">45</span>
         </div>
-    </ul>
+    </div>
     <ul class="tasks" id="tasks">
         <li>
             <p>example to do element</p>
-            <span id="note">simple note</span>
             <input type="checkbox">
+            <span id="note" class="note">simple note</span>
         </li>
         <li>
             <p>example to do element</p>
-            <span id="note">simple note</span>
             <input type="checkbox">
+            <span id="note" class="note">simple note</span>
         </li>
         <li>
             <p>example to do element</p>
-            <span id="note">simple note</span>
             <input type="checkbox">
+            <span id="note" class="note">simple note</span>
         </li>
     </ul>
+    </div>
 </body>
 </html>
